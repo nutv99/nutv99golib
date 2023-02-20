@@ -13,6 +13,10 @@ type Book111 struct {
 	Author string `json:"author"`
 }
 
+func GetSchoolAddress() string {
+    return "กรุงเทพ";
+}
+
 func Aaaa() string {
 	message := "Hello, "
 	return message
