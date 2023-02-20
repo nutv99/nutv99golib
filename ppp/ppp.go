@@ -40,13 +40,7 @@ func Aaaa() string {
 }
 
 func listBook2sHandler(c *gin.Context) {
-	var book2s []Book2
-	if result := Db.Find(&book2s); result.Error != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": result.Error.Error(),
-		})
-		return
-	}
-
-	c.JSON(http.StatusOK, &book2s)
+	 
+        message := "Hello Book2 "
+	c.JSON(http.StatusOK, &message)
 }
