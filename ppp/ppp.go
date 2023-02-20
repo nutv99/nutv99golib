@@ -6,7 +6,7 @@ type Book999 struct {
 	Author string `json:"author"`
 }
 
-func aaaa() string {
+func Aaaa() string {
 	message := "Hello, "
 	return message
 }
